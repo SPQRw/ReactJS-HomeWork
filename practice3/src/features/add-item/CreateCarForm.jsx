@@ -51,7 +51,6 @@ const CreateCarForm = () => {
           }
           value={data.image}
         />
-
         <button onClick={(e) => createCar(e)}>Create</button>
       </form>
 

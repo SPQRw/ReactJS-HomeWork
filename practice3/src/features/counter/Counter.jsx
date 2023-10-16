@@ -7,6 +7,7 @@ export function Counter() {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
+
   // console.log(state)
   const [per, setPer] = useState("fghj");
   const Check = () => {
