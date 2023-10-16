@@ -1,18 +1,18 @@
-import React from 'react'
-import { useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment, incrementByAmount } from './counterSlice'
+import React from "react";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment, incrementByAmount } from "./counterSlice";
 
 export function Counter() {
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
-  const state = useSelector((state) => state)
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
   // console.log(state)
-  const [per, setPer] = useState('fghj')
+  const [per, setPer] = useState("fghj");
   const Check = () => {
     // console.log(per)
-    dispatch(incrementByAmount(per))
-  }
+    dispatch(incrementByAmount(per));
+  };
   return (
     <div>
       <div>
@@ -29,14 +29,15 @@ export function Counter() {
         >
           Decrement
         </button>
-        <input type="text" onChange={(e)=>{setPer(e.target.value)}}/>
+        {/* <input type="text" onChange={(e)=>{setPer(e.target.value)}}/> */}
         <button
-          onClick={()=>{Check()}}
+          onClick={() => {
+            Check();
+          }}
         >
           incrementByAmount
         </button>
-
       </div>
     </div>
-  )
+  );
 }
