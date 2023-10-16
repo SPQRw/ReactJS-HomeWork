@@ -16,9 +16,9 @@ const CreateCarForm = () => {
   const dispatch = useDispatch();
   const createCar = (e) => {
     e.preventDefault();
-    console.log(cars.length);
+    // console.log(cars.length);
     setData((prev) => ({ id: data.id, ...prev }));
-    // data.id = 5;
+    data.id = 5;
     console.log(data.id);
     dispatch(addCar(data));
     setData(clearData);

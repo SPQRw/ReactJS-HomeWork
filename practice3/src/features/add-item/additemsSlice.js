@@ -11,8 +11,8 @@ export const additemsSlice = createSlice({
   initialState,
   reducers: {
     addCar: (state, action) => {
-      //   let data = action.payload;
-      console.log(state);
+      // let data = action.payload;
+      console.log(action);
       //   state.cars((prev) => [...prev, { id: prev.length + 1, ...data }]);
       //   state.cars = action.payload;
       action.payload.name
